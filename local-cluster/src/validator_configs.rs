@@ -90,6 +90,8 @@ pub fn safe_clone_config(config: &ValidatorConfig) -> ValidatorConfig {
         shred_retransmit_receiver_addresses: config.shred_retransmit_receiver_addresses.clone(),
         multicast_receiver_address: config.multicast_receiver_address.clone(),
         disable_multicast_shred_check: config.disable_multicast_shred_check,
+        extra_bank_notification_senders: config.extra_bank_notification_senders.clone(),
+        gossip_ready_sender: config.gossip_ready_sender.clone(),
     }
 }
 
